@@ -1,0 +1,45 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    box-sizing: border-box; /* Modelo de caja: border-box para incluir el borde y el relleno en el tamaño total */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+    width: 100%; /* Ancho completo */
+    margin: 0 auto; /* Centrar horizontalmente utilizando márgenes automáticos */
+    background: #6c9cb8; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Alinear el texto al centro */
+    padding: 15px; /* Relleno interno */
+}
+
+/* Estilos para el contenedor de países */
+.countries {
+    max-width: 1240px; /* Ancho máximo del contenedor */
+    margin: 30px auto; /* Margen superior e inferior, centrado horizontalmente */
+    display: grid; /* Uso de la propiedad grid para el diseño */
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas con igual flexibilidad (fr) */
+    gap: 20px; /* Espacio entre elementos en el diseño de cuadrícula */
+}
+
+/* Estilos para el contenedor individual de cada país */
+.country-div {
+    background: #94b2df; /* Color de fondo */
+    border: 1px solid burlywood; /* Borde y color del borde */
+    padding: 15px; /* Relleno interno */
+}
+
+/* Estilos para las imágenes dentro de los contenedores de país */
+img {
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    height: 150px; /* Altura fija */
+}
+
+/* Media query para hacer la disposición de una columna en pantallas pequeñas */
+@media screen and (max-width: 576px) {
+    .countries {
+        grid-template-columns: repeat(1, 1fr); /* Cambiar a una columna en pantallas más pequeñas */
+    }
+}
